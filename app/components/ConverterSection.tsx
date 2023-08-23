@@ -72,7 +72,6 @@ const ConverterSection = () => {
             <option value='CHF'>CHF</option>
             <option value='KWD'>KWD</option>
             <option value='BHD'>BHD</option>
-
             <option value='CNY'>CNY</option>
             <option value='UAH'>UAH</option>
           </select>

@@ -7,7 +7,7 @@ const ConverterSection = () => {
   const [amountConvertFrom, setAmountConvertFrom] = useState(0)
   const [convertRates, setConvertRates] = useState<any[]>()
 
-  const fetchURL = `https://api.getgeoapi.com/v2/currency/convert?api_key=972b6121e0e5afe28ac6decf04d6f3fc359fe3e8&from=${convertFrom}&to=${convertTo}&amount=${amountConvertFrom}`
+  const fetchURL = `https://api.getgeoapi.com/v2/currency/convert?api_key=${process.env.NEXT_PUBLIC_API_KEY}&from=${convertFrom}&to=${convertTo}&amount=${amountConvertFrom}`
 
   async function fetchConvertRates(): Promise<any> {
     const res = await fetch(fetchURL)
